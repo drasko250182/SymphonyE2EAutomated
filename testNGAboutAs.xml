@@ -1,0 +1,20 @@
+<suite thread-count="5" verbose="1" name="Suite" annotations="JDK"
+       parallel="tests">
+
+    <parameter name="project" value="symphony" />
+
+    <parameter name="url" value="https://symphony.is/" />
+
+
+    <parameter name="browser" value="chrome" />
+    <parameter name="chromeDriverPath"
+               value="D:\\chromedriver.exe" />
+
+    <test name="ChromeTest">
+        <classes>
+            <class name="com.symphony.e2e.suites.AboutAsSuite" />
+        </classes>
+
+    </test>
+
+</suite>
